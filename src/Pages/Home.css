@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(146, 214, 197);
+}
+/* .dev-name{
+    background-color: rgb(19, 150, 132);
+    height: 80px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-around;
+    font-size: small;
+} */
+.bottom-section{
+background-image: url('https://thumbs.gfycat.com/BelovedEntireAmoeba-max-1mb.gif');
+    height: 70px;
+    margin-top: 0px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: small;
+    padding-top: 3%; */
+
+
+}
+.filler{
+    height: 40%;
+    width: 100%;
+}
+/* background-color: rgb(23, 33, 61) */

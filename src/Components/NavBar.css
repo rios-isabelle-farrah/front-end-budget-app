@@ -1,0 +1,59 @@
+.nav-class{
+    /* background-color:  rgb(44, 49, 63); */
+    background-color: rgb(23, 33, 61);
+    margin-top:1%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    color:white;
+    padding-top:1%;
+    padding-bottom:0%;
+ 
+}
+.buttons{
+    background-color: rgb(23, 124, 206);
+    height: 80%;
+    margin-top: 0%;
+    width: 39%;
+    font-size:16px;
+    border-radius: 30%;
+    color: white;
+    text-decoration: none;
+    border:darkblue solid 3px;
+    font-family: serif;
+   
+}
+
+.wrap-nav{
+    background-color: rgb(23, 33, 61);
+    padding-top:4%;
+    height: 30%;
+  
+}
+.title{
+    /* text-align: center; */
+    /* margin-top:11px; */
+    color:white;
+    font-size: 35px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 6px;
+
+}
+.money-icon{
+height:104px;
+width: 104px;
+margin-right: 5%;
+}
+
+.top-header{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+}
+
+.links{
+    color: white;
+    text-decoration: none;
+}
