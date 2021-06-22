@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { withRouter } from "react-router-dom";
+import "./TransactionNew.css"
 //import CurrencyInput from 'react-currency-input-field';
 
 
@@ -19,9 +20,9 @@ function TransactionNew({ addTransaction, history }) {
     setTransaction({ ...transaction, [event.target.id]: event.target.value });
   };
 
-  const handleCheckboxChange = () => {
-    setTransaction({ ...transaction, sampleQuestionCheck: !transaction.sampleQuestionCheck });
-  };
+  // const handleCheckboxChange = () => {
+  //   setTransaction({ ...transaction, sampleQuestionCheck: !transaction.sampleQuestionCheck });
+  // };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -31,21 +32,13 @@ function TransactionNew({ addTransaction, history }) {
 
   return (
     <div className="New">
-{/* - Displays a form with the following inputs and appropriate labels:
-  - name (text)
-  - name (text)
-  - post (text)
-  - sampleQuestionCheck (checkbox)
-  - sampleQuestionCheck (number)
-  - submit (submit) */}
-
-<h1>New Transaction</h1>
 
 
-
-      <form onSubmit={handleSubmit}>
+<h1 className="new-title">New Transaction</h1>
+      <form className="form-input" onSubmit={handleSubmit}>
         <label htmlFor="date">Date:</label>
         <input
+        
           id="date"
           value={transaction.date}
           type="date"
@@ -54,7 +47,7 @@ function TransactionNew({ addTransaction, history }) {
           required
         /><br></br>
         <br></br>
-        <label htmlFor="name">name:</label>
+        <label htmlFor="name">Name:</label>
         <input
           id="name"
           type="text"
@@ -64,7 +57,6 @@ function TransactionNew({ addTransaction, history }) {
           placeholder="transaction name"
           onChange={handleTextChange}
         />
-
 <br></br><br></br>
          <label htmlFor="name">Amount:</label>
         <input
@@ -87,41 +79,10 @@ function TransactionNew({ addTransaction, history }) {
   onValueChange={(value, name) => console.log(value, name)}
 />; */}
         <br></br><br></br>
-        {/* <label htmlFor="post">Post:</label>
-        <input
-          id="post"
-          type="text"
-          name="post"
-          value={transaction.post}
-          placeholder="educational, inspirational, ..."
-          onChange={handleTextChange}
-        /> */}
-        <label htmlFor="sampleQuestionCheck">Add to Budget</label>
-        <input
-          id="sampleQuestionCheck"
-          type="checkbox"
-          onChange={handleCheckboxChange}
-          checked={transaction.sampleQuestionCheck}
-        />
-        {/* <label htmlFor="post">Post:</label>
-        <textarea
-          id="post"
-          name="post"
-          value={transaction.post}
-          onChange={handleTextChange}
-          placeholder="Describe why you transactioned this site"
-        /> */}
-          {/* <label htmlFor="sampleQuestionCheck">Days Since Last Crisis:</label>
-        <input
-          id="sampleQuestionCheck"
-          type="number"
-          name="sampleQuestionCheck"
-          value={transaction.sampleQuestionCheck}
-          placeholder="educational, inspirational, ..."
-          onChange={handleNumChange}
-        /> */}
+   
+ 
         <br />
-        <input type="submit" />
+        <button className="submit" type="submit">Submit</button>
       </form>
     </div>
   );

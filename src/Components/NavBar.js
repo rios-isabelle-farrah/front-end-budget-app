@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import "./NavBar.css";
+import all from './images/all.png';
+import newPng from './images/new.png';
 
 
 function NavBar() {
@@ -13,16 +15,18 @@ function NavBar() {
         <h3 className="title">Mula Money Budgeting App</h3>
       </section>
       <nav className="nav-class">
-        <button className="buttons">
+ 
           <Link className="links" to="/transactions">
-            Transactions
+          <img className="new"src={all} />
           </Link>
-        </button>
-        <button className="buttons">
+
+        {/* <button className="buttons"> */}
+
           <Link className="links" to="/transactions/new">
-            New Transaction
+
+          <img className ="all"src={newPng} />
           </Link>
-        </button>
+        {/* </button> */}
       </nav>
     </div>
   );

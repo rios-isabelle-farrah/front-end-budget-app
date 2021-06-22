@@ -1,0 +1,31 @@
+.form-input{
+   background-color: rgb(56, 118, 201);
+   width: 50%;
+   margin-left: 25%;
+   display: flex;
+   flex-direction: column;
+   font-family:Arial, Helvetica, sans-serif;
+   text-decoration: darkblue;
+
+}
+
+input{
+    width: 100%;
+    height: 22px;
+    /* margin-left: 25%; */
+}
+
+
+.submit{
+    background-color: darkblue;
+    color: white;
+    height: 33px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+
+.new-title{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}

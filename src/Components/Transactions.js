@@ -28,8 +28,8 @@ function Transactions({ transactions }) {
     <div className="Transactions">
       <section>
         <ul>
-          <h1 className="title-total">Bank Total from Transactions: {total}</h1>
-          <h2>{transactions.amount}</h2>
+          <h1 className="title-total">Bank Total: {total.toFixed(2)}</h1>
+         
 
           <li className="transaction-entry">
             {transactions.map((transaction, index) => {
